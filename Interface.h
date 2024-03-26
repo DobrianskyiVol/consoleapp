@@ -16,6 +16,10 @@ public:
 
     virtual void write(ostream &os) = 0;
 
+    friend istream &operator >>(istream &is, Interface &anInterface);
+
+    virtual void read(istream &is) = 0;
+
     virtual ~Interface() = default;
 };
 
