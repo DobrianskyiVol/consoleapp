@@ -13,3 +13,7 @@ istream &operator >>(istream &is, Interface &anInterface){
     anInterface.read(is);
     return is;
 }
+
+bool Interface::operator==(Interface &anInterface, Interface &anInterface1) {
+    return false;
+}
