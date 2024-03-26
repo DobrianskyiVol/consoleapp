@@ -5,6 +5,7 @@
 #ifndef CONSOLEAPP_INTERFACE_H
 #define CONSOLEAPP_INTERFACE_H
 #include <iostream>
+#include <fstream>
 
 using namespace std;
 

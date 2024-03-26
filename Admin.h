@@ -10,7 +10,7 @@ class Admin: public Interface{
 private:
     string login;
     string password;
-private:
+public:
     Admin();
 
     Admin(string login, string password);
