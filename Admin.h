@@ -4,9 +4,13 @@
 
 #ifndef CONSOLEAPP_ADMIN_H
 #define CONSOLEAPP_ADMIN_H
+#include "Interface.h"
 
-
-class Admin {
+class Admin: public Interface{
+private:
+    string login;
+    string password;
+private:
 
 };
 
