@@ -1,6 +1,8 @@
 #include <iostream>
 #include "Admin.h"
 
+using namespace std;
+
 void write(string &nameoffile, Interface &obj){
     ofstream of(nameoffile,ios::app);
     if (!of.is_open())
@@ -18,15 +20,26 @@ void read(string &nameoffile, Interface &obj){
     }
 }
 
+bool check(string &nameoffile, Interface &obj){
+    return obj.cmp();
+}
 
-using namespace std;
+void erase(string &nameoffile, Interface &obj){
+    obj.erase();
+}
+
 
 int main() {
     Interface *obj = new Admin("USer","Parol");
     string nameoffile = "Admins.txt";
 
-  //  write(nameoffile,*obj);
-    read(nameoffile,*obj);
+//  //  write(nameoffile,*obj);
+//   // read(nameoffile,*obj);
+//    if (obj->cmp()){
+//        cout << "Good";
+//    } else
+//        cout << "Bad";
+
 
     return 0;
 }

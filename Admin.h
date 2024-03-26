@@ -19,8 +19,9 @@ public:
 
     void read(istream &is) override;
 
-    bool cmp();
+    bool cmp() const override;
 
+    friend bool operator ==(const Admin &admin, const Admin &admin2);
 };
 
 

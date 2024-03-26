@@ -22,6 +22,10 @@ public:
     virtual void read(istream &is) = 0;
 
     virtual ~Interface() = default;
+
+    virtual bool cmp() const = 0;
+
+
 };
 
 
