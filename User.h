@@ -6,13 +6,23 @@
 #define CONSOLEAPP_USER_H
 #include "Interface.h"
 
-class User {
+class User: public Interface{
 private:
     string login;
 public:
     User();
 
     User(string login);
+
+    void write(ostream &os) override;
+
+    void read(istream &is) override;
+
+    ~User() = default;
+
+    bool cmp() const override;
+
+    void erase() override;
 
 };
 
