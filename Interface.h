@@ -4,10 +4,16 @@
 
 #ifndef CONSOLEAPP_INTERFACE_H
 #define CONSOLEAPP_INTERFACE_H
+#include <iostream>
+
+using namespace std;
 
 
 class Interface {
+public:
+    friend ostream &operator <<(ostream &os, Interface &anInterface);
 
+    virtual void write(ostream &os) = 0;
 };
 
 

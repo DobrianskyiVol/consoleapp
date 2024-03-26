@@ -3,3 +3,8 @@
 //
 
 #include "Interface.h"
+
+ostream &operator<<(ostream &os, Interface &anInterface) {
+    anInterface.write(os);
+    return os;
+}
