@@ -5,4 +5,6 @@ set(CMAKE_CXX_STANDARD 17)
 
 add_executable(consoleapp main.cpp
         Interface.cpp
-        Interface.h)
+        Interface.h
+        Admin.cpp
+        Admin.h)
