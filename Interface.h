@@ -20,9 +20,7 @@ public:
 
     virtual void read(istream &is) = 0;
 
-    friend bool operator ==(Interface &anInterface, Interface &anInterface1);
-
-    virtual bool cmp(Interface &anInterface, Interface &anInterface1) = 0;
+    virtual bool cmp(Interface &anInterface) = 0;
 
     virtual ~Interface() = default;
 };
