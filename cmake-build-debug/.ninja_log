@@ -23,3 +23,9 @@
 708	817	7331807668307379	consoleapp.exe	75634852d99599c8
 2	432	7331808140080456	CMakeFiles/consoleapp.dir/main.cpp.obj	62bd66ea98176fa9
 432	515	7331808140880443	consoleapp.exe	75634852d99599c8
+4	638	7331830843424125	CMakeFiles/consoleapp.dir/Interface.cpp.obj	d192b0732347ccec
+2	655	7331830843604436	CMakeFiles/consoleapp.dir/main.cpp.obj	62bd66ea98176fa9
+5	905	7331830846119635	CMakeFiles/consoleapp.dir/Admin.cpp.obj	5facd9a374ccf84f
+905	1019	7331830847219633	consoleapp.exe	75634852d99599c8
+2	568	7331834597583219	CMakeFiles/consoleapp.dir/Admin.cpp.obj	5facd9a374ccf84f
+568	661	7331834598492893	consoleapp.exe	75634852d99599c8

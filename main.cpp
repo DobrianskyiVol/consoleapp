@@ -24,13 +24,15 @@ bool check(string &nameoffile, Interface &obj){
     return obj.cmp();
 }
 
-void erase(string &nameoffile, Interface &obj){
-    obj.erase();
+void erase(string nameoffile, Interface &obj){
+    if (obj.cmp())
+        obj.erase();
+    else
+        cout << "There arent such an object";
 }
 
-
 int main() {
-    Interface *obj = new Admin("USer","Parol");
+    Interface *obj = new Admin();
     string nameoffile = "Admins.txt";
 
 //  //  write(nameoffile,*obj);
@@ -40,6 +42,7 @@ int main() {
 //    } else
 //        cout << "Bad";
 
+    obj->erase();
 
     return 0;
 }

@@ -7,6 +7,7 @@
 #include <iostream>
 #include <fstream>
 #include <memory>
+#include <vector>
 
 using namespace std;
 
@@ -25,7 +26,7 @@ public:
 
     virtual bool cmp() const = 0;
 
-
+    virtual void erase() = 0;
 };
 
 

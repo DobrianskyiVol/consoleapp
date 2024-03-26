@@ -22,6 +22,8 @@ public:
     bool cmp() const override;
 
     friend bool operator ==(const Admin &admin, const Admin &admin2);
+
+    void erase() override;
 };
 
 
