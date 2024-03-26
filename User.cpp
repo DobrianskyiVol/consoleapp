@@ -3,3 +3,8 @@
 //
 
 #include "User.h"
+
+User::User(): User("Guest") {}
+
+User::User(std::string login):
+    login{std::move(login)}{}

@@ -4,9 +4,15 @@
 
 #ifndef CONSOLEAPP_USER_H
 #define CONSOLEAPP_USER_H
-
+#include "Interface.h"
 
 class User {
+private:
+    string login;
+public:
+    User();
+
+    User(string login);
 
 };
 
