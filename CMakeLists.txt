@@ -7,4 +7,6 @@ add_executable(consoleapp main.cpp
         Interface.cpp
         Interface.h
         Admin.cpp
-        Admin.h)
+        Admin.h
+        User.cpp
+        User.h)

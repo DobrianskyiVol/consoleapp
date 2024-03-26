@@ -1,9 +1,4 @@
-//
-// Created by user on 26.03.2024.
-//
-
 #include "Admin.h"
-
 
 Admin::Admin(): Admin("Unknown","Abscent") {}
 
@@ -33,7 +28,6 @@ bool Admin::cmp() const {
     ifs.close();
     return false;
 }
-
 
 bool operator ==(const Admin &admin, const Admin &admin2){
     return(admin.password == admin2.password && admin.login == admin2.login);
