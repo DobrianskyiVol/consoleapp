@@ -34,7 +34,7 @@ bool User::cmp() const {
 }
 
 void User::erase() {
-    ifstream ifs("Admins.txt");
+    ifstream ifs("Users.txt");
     if (!ifs.is_open())
         return;
 
@@ -54,7 +54,7 @@ void User::erase() {
         it++;
     }
 
-    std::ofstream of("Admins.txt");
+    std::ofstream of("Users.txt");
     for (const User& user:users) {
         of << user.login << endl;
     }

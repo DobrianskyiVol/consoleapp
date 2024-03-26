@@ -73,6 +73,12 @@ build CMakeFiles/consoleapp.dir/User.cpp.obj: CXX_COMPILER__consoleapp_unscanned
   OBJECT_DIR = CMakeFiles\consoleapp.dir
   OBJECT_FILE_DIR = CMakeFiles\consoleapp.dir
 
+build CMakeFiles/consoleapp.dir/Menu.cpp.obj: CXX_COMPILER__consoleapp_unscanned_Debug D$:/consoleapp/Menu.cpp || cmake_object_order_depends_target_consoleapp
+  DEP_FILE = CMakeFiles\consoleapp.dir\Menu.cpp.obj.d
+  FLAGS = -g -fdiagnostics-color=always
+  OBJECT_DIR = CMakeFiles\consoleapp.dir
+  OBJECT_FILE_DIR = CMakeFiles\consoleapp.dir
+
 
 # =============================================================================
 # Link build statements for EXECUTABLE target consoleapp
@@ -81,7 +87,7 @@ build CMakeFiles/consoleapp.dir/User.cpp.obj: CXX_COMPILER__consoleapp_unscanned
 #############################################
 # Link the executable consoleapp.exe
 
-build consoleapp.exe: CXX_EXECUTABLE_LINKER__consoleapp_Debug CMakeFiles/consoleapp.dir/main.cpp.obj CMakeFiles/consoleapp.dir/Interface.cpp.obj CMakeFiles/consoleapp.dir/Admin.cpp.obj CMakeFiles/consoleapp.dir/User.cpp.obj
+build consoleapp.exe: CXX_EXECUTABLE_LINKER__consoleapp_Debug CMakeFiles/consoleapp.dir/main.cpp.obj CMakeFiles/consoleapp.dir/Interface.cpp.obj CMakeFiles/consoleapp.dir/Admin.cpp.obj CMakeFiles/consoleapp.dir/User.cpp.obj CMakeFiles/consoleapp.dir/Menu.cpp.obj
   FLAGS = -g
   LINK_LIBRARIES = -lkernel32 -luser32 -lgdi32 -lwinspool -lshell32 -lole32 -loleaut32 -luuid -lcomdlg32 -ladvapi32
   OBJECT_DIR = CMakeFiles\consoleapp.dir
