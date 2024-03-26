@@ -15,6 +15,7 @@ private:
 
     Admin(string login, string password);
 
+    void write(ostream &os) override;
 
 };
 

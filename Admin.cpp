@@ -10,3 +10,6 @@ Admin::Admin(): Admin("Unknown","Abscent") {}
 Admin::Admin(std::string login, std::string password):
     login{std::move(login)},password{std::move(password)}{}
 
+void Admin::write(std::ostream &os) {
+    os << login << endl << password;
+}
