@@ -17,6 +17,8 @@ public:
 
     void write(ostream &os) override;
 
+    void read(istream &is) override;
+
 };
 
 

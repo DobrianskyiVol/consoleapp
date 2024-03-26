@@ -13,3 +13,7 @@ Admin::Admin(std::string login, std::string password):
 void Admin::write(std::ostream &os) {
     os << login << endl << password << endl;
 }
+
+void Admin::read(std::istream &is) {
+    is >> login >> password;
+}
