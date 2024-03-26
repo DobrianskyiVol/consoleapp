@@ -6,6 +6,7 @@
 #define CONSOLEAPP_INTERFACE_H
 #include <iostream>
 #include <fstream>
+#include <memory>
 
 using namespace std;
 
@@ -19,8 +20,6 @@ public:
     friend istream &operator >>(istream &is, Interface &anInterface);
 
     virtual void read(istream &is) = 0;
-
-    virtual bool cmp(Interface &anInterface) = 0;
 
     virtual ~Interface() = default;
 };

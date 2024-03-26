@@ -19,7 +19,7 @@ public:
 
     void read(istream &is) override;
 
-    bool cmp(Interface &anInterface, Interface &anInterface1) override;
+    bool cmp();
 
 };
 

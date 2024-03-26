@@ -19,14 +19,14 @@ void read(string &nameoffile, Interface &obj){
 }
 
 
-
 using namespace std;
 
 int main() {
-    Interface *obj = new Admin;
+    Interface *obj = new Admin("USer","Parol");
     string nameoffile = "Admins.txt";
 
   //  write(nameoffile,*obj);
     read(nameoffile,*obj);
+
     return 0;
 }

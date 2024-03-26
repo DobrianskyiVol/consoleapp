@@ -17,3 +17,4 @@ void Admin::write(std::ostream &os) {
 void Admin::read(std::istream &is) {
     is >> login >> password;
 }
+
