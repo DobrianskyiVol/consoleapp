@@ -14,6 +14,8 @@ public:
     friend ostream &operator <<(ostream &os, Interface &anInterface);
 
     virtual void write(ostream &os) = 0;
+
+    virtual ~Interface() = default;
 };
 
 
