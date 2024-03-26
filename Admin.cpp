@@ -3,3 +3,10 @@
 //
 
 #include "Admin.h"
+
+
+Admin::Admin(): Admin("Unknown","Abscent") {}
+
+Admin::Admin(std::string login, std::string password):
+    login{std::move(login)},password{std::move(password)}{}
+

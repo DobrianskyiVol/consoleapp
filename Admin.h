@@ -11,6 +11,10 @@ private:
     string login;
     string password;
 private:
+    Admin();
+
+    Admin(string login, string password);
+
 
 };
 
