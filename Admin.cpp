@@ -13,8 +13,8 @@ void Admin::read(std::istream &is) {
     is >> login >> password;
 }
 
-bool Admin::cmp() const {
-    ifstream ifs("Admins.txt");
+bool Admin::cmp(string nameoffile) const {
+    ifstream ifs(nameoffile);
     if (!ifs.is_open())
         return false;
 

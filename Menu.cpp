@@ -12,8 +12,8 @@ void Menu::read(std::istream &is) {
     is >> dish >> price >> weight;
 }
 
-bool Menu::cmp() const {
-    ifstream ifs("Menus.txt");
+bool Menu::cmp(string nameoffile) const {
+    ifstream ifs(nameoffile);
     if (!ifs.is_open())
         return false;
 

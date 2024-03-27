@@ -14,7 +14,19 @@ private:
     Menu order;
     string status;
 public:
+    Ordering();
 
+    Ordering(const User& user, const Menu& order);
+
+    void write(ostream &os) override;
+
+    void read(istream &is) override;
+
+    ~Ordering() = default;
+
+    bool cmp(string nameoffile) const override;
+
+    void erase() override;
 };
 
 

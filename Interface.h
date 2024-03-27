@@ -24,7 +24,7 @@ public:
 
     virtual ~Interface() = default;
 
-    virtual bool cmp() const = 0;
+    virtual bool cmp(string nameoffile) const = 0;
 
     virtual void erase() = 0;
 };

@@ -19,7 +19,7 @@ public:
 
     void read(istream &is) override;
 
-    bool cmp() const override;
+    bool cmp(string nameoffile) const override;
 
     friend bool operator ==(const Admin &admin, const Admin &admin2);
 

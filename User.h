@@ -20,7 +20,7 @@ public:
 
     ~User() = default;
 
-    bool cmp() const override;
+    bool cmp(string nameoffile) const override;
 
     void erase() override;
 

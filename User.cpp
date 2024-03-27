@@ -17,8 +17,8 @@ void User::read(std::istream &is) {
     is >> login;
 }
 
-bool User::cmp() const {
-    ifstream ifs("Users.txt");
+bool User::cmp(string nameoffile) const {
+    ifstream ifs(nameoffile);
     if (!ifs.is_open())
         return false;
 
