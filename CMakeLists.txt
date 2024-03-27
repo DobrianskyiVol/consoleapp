@@ -11,4 +11,6 @@ add_executable(consoleapp main.cpp
         User.cpp
         User.h
         Menu.cpp
-        Menu.h)
+        Menu.h
+        Ordering.cpp
+        Ordering.h)

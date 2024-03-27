@@ -56,7 +56,7 @@ void User::erase() {
 
     std::ofstream of("Users.txt");
     for (const User& user:users) {
-        of << user << endl;
+        of << user.login << endl;
     }
     of.close();
 }
