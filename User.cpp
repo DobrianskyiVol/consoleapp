@@ -10,7 +10,7 @@ User::User(std::string login):
     login{std::move(login)}{};
 
 void User::write(std::ostream &os) {
-    os << login;
+    os << login << endl;
 }
 
 void User::read(std::istream &is) {

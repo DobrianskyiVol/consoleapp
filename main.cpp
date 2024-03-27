@@ -1,5 +1,6 @@
 #include <iostream>
 #include "Admin.h"
+#include "Ordering.h"
 
 using namespace std;
 
@@ -21,19 +22,19 @@ void read(string &nameoffile, Interface &obj){
 }
 
 bool check(string &nameoffile, Interface &obj){
-    return obj.cmp();
+    return obj.cmp(nameoffile);
 }
 
-void erase(string nameoffile, Interface &obj){
-    if (obj.cmp())
-        obj.erase();
-    else
-        cout << "There arent such an object";
-}
+//void erase(string nameoffile, Interface &obj){
+//    if (obj.cmp(nameoffile))
+//        obj.erase();
+//    else
+//        cout << "There arent such an object";
+//}
 
 int main() {
-    Interface *obj = new Admin();
-    string nameoffile = "Admins.txt";
+    const User *obj = new User();
+//    string nameoffile = "Admins.txt";
 
 //  //  write(nameoffile,*obj);
 //   // read(nameoffile,*obj);
@@ -42,7 +43,17 @@ int main() {
 //    } else
 //        cout << "Bad";
 
-    obj->erase();
+//    obj->erase();
 
+    const Menu *meal = new Menu;
+
+    Interface *obj2 = new Ordering(*obj,*meal);
+
+    string nameoffile = "Orderings.txt";
+//    write(nameoffile,*obj2);
+    if (obj2->cmp(nameoffile))
+        cout << "Success";
+    else
+        cout << "fail";
     return 0;
 }

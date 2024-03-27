@@ -19,7 +19,16 @@ void Ordering::read(std::istream &is) {
 }
 
 bool Ordering::cmp(string nameoffile) const {
+    ifstream ifs(nameoffile);
+    if (!ifs.is_open())
+        return false;
+    unique_ptr<Ordering> ordering = make_unique<Ordering>();
+    while (ifs >> *ordering){
+        if (ordering->user.cmp(nameoffile))
+            return (ordering->status == "Checked");
+    }
 
+    ifs.close();
     return false;
 }
 
