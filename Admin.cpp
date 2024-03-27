@@ -47,7 +47,7 @@ void Admin::erase() {
 
     auto it = admins.begin();
     while(it!=admins.end()){
-        if (it->login == login){
+        if (it->login == login && it->password == password){
             it = admins.erase(it);
             break;
         }

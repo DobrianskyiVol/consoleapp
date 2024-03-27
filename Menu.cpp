@@ -42,7 +42,7 @@ void Menu::erase() {
 
     auto it = menus.begin();
     while (it != menus.end()) {
-        if (it->dish == dish) {
+        if (it->dish == dish && it->price == price && it->weight == weight) {
             it = menus.erase(it);
             break;
         }

@@ -33,6 +33,7 @@ bool Ordering::cmp(string nameoffile) const {
 }
 
 void Ordering::erase() {
-
+    ofstream of("Orderings.txt");
+    of.close();
 }
 
