@@ -31,6 +31,8 @@ public:
     void search(string &nameofdish);
 
    // Menu operator =(Menu &menu);
+
+   void showsingledish();
 };
 
 

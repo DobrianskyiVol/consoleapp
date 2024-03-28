@@ -28,7 +28,7 @@ public:
 
     void erase() override;
 
-
+    void showhistory(User &user1);
 
 };
 

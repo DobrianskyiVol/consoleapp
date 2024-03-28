@@ -37,4 +37,15 @@ void Ordering::erase() {
     of.close();
 }
 
-
+void Ordering::showhistory(User &user1) {
+    ifstream ifs("Orderings.txt");
+    if (!ifs.is_open())
+        return;
+    unique_ptr<Ordering> ordering = make_unique<Ordering>();
+    while (ifs >> *ordering){
+        if (ordering->user == user1){
+            cout << "Food(Name,price,weight: " << ordering->order
+        }
+    }
+    ifs.close();
+}
