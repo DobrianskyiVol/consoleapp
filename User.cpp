@@ -61,3 +61,8 @@ void User::erase() {
     of.close();
 }
 
+bool User::operator==(const User &user) const {
+    if (login == user.login)
+        return true;
+    return false;
+}

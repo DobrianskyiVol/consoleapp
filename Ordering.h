@@ -27,6 +27,9 @@ public:
     bool cmp(string nameoffile) const override;
 
     void erase() override;
+
+
+
 };
 
 

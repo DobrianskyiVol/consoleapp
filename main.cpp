@@ -30,7 +30,7 @@ bool check(string &nameoffile, Interface &obj){
 int main() {
     int option;
     string orderings, admins, menus, users;
-    orderings = "Ordering.txt";
+    orderings = "Orderings.txt";
     admins = "Admins.txt";
     menus = "Menu.txt";
     users = "Users.txt";
@@ -120,7 +120,7 @@ int main() {
             }
         }else if(option == 2){
             cout << "Welcome user. Firstly enter your login" << endl;
-            unique_ptr<Interface> user = make_unique<User>();
+            unique_ptr<User> user = make_unique<User>();
             cin >> *user;
             while (true){
                 cout << "Thank you so much " << *user;
@@ -143,9 +143,24 @@ int main() {
                         break;
                     };
                     case 2:{
+                        unique_ptr<Menu> menu = make_unique<Menu>();
+                        label1:
+                        string nameofdishtoorder;
+                        cout << "Enter name of food which you'd like to order:)" << endl;
+                        cin >> nameofdishtoorder;
+                        menu->search(nameofdishtoorder);
+                        if (menu->cmp(menus)){
+                            unique_ptr<Ordering> ordering = make_unique<Ordering>(*user,*menu);
+                            write(orderings,*ordering);
+                        }else{
+                            cout << "You must have entered the wrong name of a dish. Pls try again" << endl;
+                            goto label1;
+                        }
+                        menu.reset();
                         break;
                     };
                     case 3:{
+
                         break;
                     };
                 }

@@ -86,7 +86,7 @@ void Menu::search(std::string &nameofdish) {
             break;
         }
     }
-    cout << "You entered the wrong food name" << endl;
+   // cout << "You entered the wrong food name" << endl;
     ifs.close();
     meal.reset();
 }

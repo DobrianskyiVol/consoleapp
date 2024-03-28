@@ -24,6 +24,8 @@ public:
 
     void erase() override;
 
+   bool operator ==(const User &user) const;
+
 };
 
 
