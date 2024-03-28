@@ -42,10 +42,16 @@ void Ordering::showhistory(User &user1) {
     if (!ifs.is_open())
         return;
     unique_ptr<Ordering> ordering = make_unique<Ordering>();
+    bool wasmentioned = false;
     while (ifs >> *ordering){
         if (ordering->user == user1){
-            cout << "Food(Name,price,weight: " << ordering->order
+            cout << "Food: ";
+            ordering->order.showsingledish();
+            cout << "\t" << "Status: " << status;
+            wasmentioned = true;
         }
     }
+    if (!wasmentioned)
+        cout << "You dont have any history on that account:(. Let's fix that:)"<<endl;
     ifs.close();
 }
