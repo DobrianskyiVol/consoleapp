@@ -49,3 +49,10 @@
 716	837	7332641595517077	consoleapp.exe	f7e5fac3ca4d70cc
 2	534	7332644920015265	CMakeFiles/consoleapp.dir/main.cpp.obj	62bd66ea98176fa9
 534	661	7332644921245250	consoleapp.exe	f7e5fac3ca4d70cc
+7	731	7332679913579133	CMakeFiles/consoleapp.dir/Ordering.cpp.obj	a7ecc445efc9aba7
+5	840	7332679914659117	CMakeFiles/consoleapp.dir/Menu.cpp.obj	dee69801ab12306a
+2	857	7332679914829118	CMakeFiles/consoleapp.dir/main.cpp.obj	62bd66ea98176fa9
+857	1009	7332679916319381	consoleapp.exe	f7e5fac3ca4d70cc
+4	570	7332680623066474	CMakeFiles/consoleapp.dir/Menu.cpp.obj	dee69801ab12306a
+2	623	7332680623596413	CMakeFiles/consoleapp.dir/main.cpp.obj	62bd66ea98176fa9
+623	755	7332680624886409	consoleapp.exe	f7e5fac3ca4d70cc

@@ -111,6 +111,7 @@ int main() {
                         unique_ptr<Interface> order = make_unique<Ordering>();
                         order->erase();
                         order.reset();
+
                         break;
                     };
                     default:
@@ -118,10 +119,10 @@ int main() {
                 }
             }
         }else if(option == 2){
+            cout << "Welcome user. Firstly enter your login" << endl;
+            unique_ptr<Interface> user = make_unique<User>();
+            cin >> *user;
             while (true){
-                cout << "Welcome user. Firstly enter your login" << endl;
-                unique_ptr<Interface> user = make_unique<User>();
-                cin >> *user;
                 cout << "Thank you so much " << *user;
                 cout << " Here is your fuctionality "<< endl;
                 cout << "Enter: 0 - to exit" << endl;
@@ -136,13 +137,12 @@ int main() {
 
                 switch (option) {
                     case 1:{
-                        unique_ptr<Interface> menu = make_unique<Menu>();
-                        read(menus,*menu);
+                        unique_ptr<Menu> menu = make_unique<Menu>();
+                        menu->showmenu();
                         menu.reset();
                         break;
                     };
                     case 2:{
-
                         break;
                     };
                     case 3:{

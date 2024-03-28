@@ -25,6 +25,12 @@ public:
     bool cmp(string nameoffile) const override;
 
     void erase() override;
+
+    void showmenu();
+
+    void search(string &nameofdish);
+
+   // Menu operator =(Menu &menu);
 };
 
 

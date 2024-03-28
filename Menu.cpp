@@ -55,3 +55,43 @@ void Menu::erase() {
     }
     of.close();
 }
+
+void Menu::showmenu() {
+    ifstream ifs("Menu.txt");
+    if (!ifs.is_open())
+        return;
+
+    unique_ptr<Menu> meal = make_unique<Menu>();
+    cout << "Name" << "\t" << "Price" << "\t" << "Weight" << endl;
+    while (ifs >> *meal){
+        cout << meal->dish << "\t" << meal->price << "\t" << meal->weight << endl;
+    }
+    ifs.close();
+    meal.reset();
+}
+
+void Menu::search(std::string &nameofdish) {
+    ifstream ifs("Menu.txt");
+    if (!ifs.is_open())
+        return;
+
+    unique_ptr<Menu> meal = make_unique<Menu>();
+    while (ifs >> *meal){
+        if (meal->dish == nameofdish){
+            dish = meal->dish;
+            price =meal->price;
+            weight = meal->weight;
+            ifs.close();
+            meal.reset();
+            break;
+        }
+    }
+    cout << "You entered the wrong food name" << endl;
+    ifs.close();
+    meal.reset();
+}
+
+//Menu Menu::operator=(Menu &menu) const {
+
+//    return menu;
+//}
