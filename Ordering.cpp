@@ -47,7 +47,7 @@ void Ordering::showhistory(User &user1) {
         if (ordering->user == user1){
             cout << "Food: ";
             ordering->order.showsingledish();
-            cout << "\t" << "Status: " << status;
+            cout << endl << "Status: " << status << endl;
             wasmentioned = true;
         }
     }

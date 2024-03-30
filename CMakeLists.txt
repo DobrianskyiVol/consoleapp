@@ -13,4 +13,6 @@ add_executable(consoleapp main.cpp
         Menu.cpp
         Menu.h
         Ordering.cpp
-        Ordering.h)
+        Ordering.h
+        CustomException.cpp
+        CustomException.h)

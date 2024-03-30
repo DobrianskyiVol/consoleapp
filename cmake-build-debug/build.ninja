@@ -85,6 +85,12 @@ build CMakeFiles/consoleapp.dir/Ordering.cpp.obj: CXX_COMPILER__consoleapp_unsca
   OBJECT_DIR = CMakeFiles\consoleapp.dir
   OBJECT_FILE_DIR = CMakeFiles\consoleapp.dir
 
+build CMakeFiles/consoleapp.dir/CustomException.cpp.obj: CXX_COMPILER__consoleapp_unscanned_Debug D$:/consoleapp/CustomException.cpp || cmake_object_order_depends_target_consoleapp
+  DEP_FILE = CMakeFiles\consoleapp.dir\CustomException.cpp.obj.d
+  FLAGS = -g -fdiagnostics-color=always
+  OBJECT_DIR = CMakeFiles\consoleapp.dir
+  OBJECT_FILE_DIR = CMakeFiles\consoleapp.dir
+
 
 # =============================================================================
 # Link build statements for EXECUTABLE target consoleapp
@@ -93,7 +99,7 @@ build CMakeFiles/consoleapp.dir/Ordering.cpp.obj: CXX_COMPILER__consoleapp_unsca
 #############################################
 # Link the executable consoleapp.exe
 
-build consoleapp.exe: CXX_EXECUTABLE_LINKER__consoleapp_Debug CMakeFiles/consoleapp.dir/main.cpp.obj CMakeFiles/consoleapp.dir/Interface.cpp.obj CMakeFiles/consoleapp.dir/Admin.cpp.obj CMakeFiles/consoleapp.dir/User.cpp.obj CMakeFiles/consoleapp.dir/Menu.cpp.obj CMakeFiles/consoleapp.dir/Ordering.cpp.obj
+build consoleapp.exe: CXX_EXECUTABLE_LINKER__consoleapp_Debug CMakeFiles/consoleapp.dir/main.cpp.obj CMakeFiles/consoleapp.dir/Interface.cpp.obj CMakeFiles/consoleapp.dir/Admin.cpp.obj CMakeFiles/consoleapp.dir/User.cpp.obj CMakeFiles/consoleapp.dir/Menu.cpp.obj CMakeFiles/consoleapp.dir/Ordering.cpp.obj CMakeFiles/consoleapp.dir/CustomException.cpp.obj
   FLAGS = -g
   LINK_LIBRARIES = -lkernel32 -luser32 -lgdi32 -lwinspool -lshell32 -lole32 -loleaut32 -luuid -lcomdlg32 -ladvapi32
   OBJECT_DIR = CMakeFiles\consoleapp.dir

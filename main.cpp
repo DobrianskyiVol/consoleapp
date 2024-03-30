@@ -76,6 +76,7 @@ int main() {
                         cin >> *newadmin;
                         write(admins, *newadmin);
                         newadmin.reset();
+                        system("pause");
                         break;
                         };
                     case 2:{
@@ -87,6 +88,7 @@ int main() {
                         else
                             cout << "There aren't such admins:)" << endl;
                         eraseadmin.reset();
+                        system("pause");
                         break;
                     };
                     case 3:{
@@ -95,6 +97,7 @@ int main() {
                         cin >> *newdish;
                         write(menus,*newdish);
                         newdish.reset();
+                        system("pause");
                         break;
                     }
                     case 4:{
@@ -106,30 +109,31 @@ int main() {
                         else
                             cout << "It seems there wasn't such kind of food:)" << endl;
                         deleteddish.reset();
+                        system("pause");
+                        break;
                     };
                     case 5:{
                         unique_ptr<Interface> order = make_unique<Ordering>();
                         order->erase();
                         order.reset();
-
+                        system("pause");
                         break;
                     };
                     default:
-                        cout << "I'm really sorry master but this function is not existing";
+                        cout << "I'm really sorry my lord but this function is not existing";
                 }
             }
         }else if(option == 2){
             cout << "Welcome user. Firstly enter your login" << endl;
             unique_ptr<User> user = make_unique<User>();
             cin >> *user;
+            cout << "Thank you so much " << *user;
             while (true){
-                cout << "Thank you so much " << *user;
                 cout << " Here is your fuctionality "<< endl;
                 cout << "Enter: 0 - to exit" << endl;
                 cout << "1 - to read the Menu" << endl;
                 cout << "2 - to make an order" << endl;
                 cout << "3 - to see the history of ordering" << endl;
-
                 cin >> option;
 
                 if (option == 0)
@@ -140,6 +144,7 @@ int main() {
                         unique_ptr<Menu> menu = make_unique<Menu>();
                         menu->showmenu();
                         menu.reset();
+                        system("pause");
                         break;
                     };
                     case 2:{
@@ -157,10 +162,13 @@ int main() {
                             goto label1;
                         }
                         menu.reset();
+                        system("pause");
                         break;
                     };
                     case 3:{
-
+                        unique_ptr<Ordering> ordering = make_unique<Ordering>();
+                        ordering->showhistory(*user);
+                        system("pause");
                         break;
                     };
                 }

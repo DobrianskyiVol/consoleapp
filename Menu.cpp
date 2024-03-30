@@ -97,5 +97,5 @@ void Menu::search(std::string &nameofdish) {
 //}
 
 void Menu::showsingledish() {
-    cout << "Name: " << dish << "Price: " << price << "weight: " << weight;
+    cout << "Name: " << dish << " Price: " << price << " weight: " << weight;
 }
